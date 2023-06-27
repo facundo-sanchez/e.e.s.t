@@ -1,0 +1,73 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #27374d;
+  color: #E7F6F2;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+}
+button{
+  color: #E7F6F2;
+  width: 25%;
+  height: 10%;
+}
+.btn-info{
+  background-color: #395B64;
+}
+.btn-success{
+  background-color: #5BB37F;
+}
+.btn-danger{
+  background-color: #B8534B;
+}
+.navbar{
+  background-color: #395B64;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 50px;
+}
+.routes-container{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.route{
+font-size: 24px;
+line-height: 150%;
+letter-spacing: -0.456px;
+}
+.main-content {
+  height: 100vh;
+  margin: auto;
+  margin-top: 5%;
+}
+.main-content *{
+  margin: 10px;
+}
+h1 {
+  text-align: center;
+  font-size: 64px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -1.408px;
+}
+.main-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 500;
+  letter-spacing: -1.408px;
+  color: #E7F6F2;
+  margin-top: 6.5%;
+}
