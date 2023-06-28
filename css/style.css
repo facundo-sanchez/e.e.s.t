@@ -110,9 +110,30 @@ button{
 /*INFORMATION*/
 /*OPINIONES*/
 .container-opinions{
+  display: flex;
   background-color: #526D82;
   width: 100%;
   height: 75vh;
+}
+.card-decorate{
+  background-color: #395B64;
+  width: 500px;
+  height: 200px;
+  rotate: calc(20deg);
+  position: absolute;
+}
+.main-opinion{
+  margin: auto;
+  background-color: #27374d;
+  width: 500px;
+  height: 200px;
+  position: absolute;
+  z-index: 1;
+}
+.card-title{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
 }
 /*OPINIONES*/
 
