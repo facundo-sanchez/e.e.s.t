@@ -108,6 +108,7 @@ button{
   margin: 30px;
 }
 /*INFORMATION*/
+
 /*OPINIONES*/
 .container-opinions{
   display: flex;
@@ -118,24 +119,50 @@ button{
 .card-decorate{
   background-color: #395B64;
   width: 500px;
-  height: 200px;
+  height: 280px;
   rotate: calc(20deg);
   position: absolute;
 }
-.main-opinion{
+.card-main{
   margin: auto;
   background-color: #27374d;
   width: 500px;
-  height: 200px;
+  height: 280px;
   position: absolute;
   z-index: 1;
+  padding: 1rem;
 }
 .card-title{
   display: flex;
   width: 100%;
   justify-content: space-around;
 }
+.card-footer{
+  text-align: end;
+}
 /*OPINIONES*/
+
+/*SEARCH BAR*/
+.search-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.search-bar{
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+}
+.search-icon{
+  background-color: #FFFFFF;
+  padding: 5px;
+}
+.search-container input{
+  border: none;
+  width: 300px;
+  padding: 5px;
+}
+/*SEARCH BAR*/
 
 /*FORM*/
 form{
@@ -150,10 +177,16 @@ form *{
   padding: 1rem;
   border-radius: 5px;
 }
+.form-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 /*FORM*/
 
 /*FOOTER*/
 footer{
+  margin-top: 200px;
   height: 45vh;
   width: 100%;
   background-color: #2B2B2B;
@@ -193,6 +226,7 @@ footer{
   display: flex;
   flex-direction: column;
   gap: 5rem;
+  align-items: center;
 }
 .section{
   height: 75vh;
