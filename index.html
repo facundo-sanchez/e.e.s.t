@@ -17,13 +17,22 @@
   <body>
     <nav class="navbar">
       <div class="routes-container">
-        <div class="route"><a href="index.html">Inicio</a></div>
-        <div class="route"><a href="noticias.html">Noticias</a></div>
-        <div class="route"><a href="tecnicaturas.html">Tecnicaturas</a></div>
-        <div class="route"><a href="contacto.html">Contacto</a></div>
+        <div class="route"><a href="./index.html">Inicio</a></div>
+        <div class="route"><a href="#">Tecnicaturas</a></div>
+        <div class="route"><a href="#">Proyectos</a></div>
+        <div class="route"><a href="#">Contacto</a></div>
       </div>
-      <div class="log">
-        <div><p>Iniciar sesion</p></div>
+      <div class="container-sesion">
+        <div class="login d-flex gap-3">
+          <div class="login-txt">
+            <a href="./login.html">Iniciar sesion</a>
+          </div>
+          <div><img src="./assets/svg/login.svg" alt="login" /></div>
+        </div>
+        <div class="logout d-flex gap-3 d-none">
+          <div class="logout-txt">Cerrar sesion</div>
+          <div><img src="./assets/svg/logout.svg" alt="login" /></div>
+        </div>
       </div>
     </nav>
     <div class="main">
@@ -239,5 +248,6 @@
         <p>www.eestn2olavarria.com</p>
       </div>
     </footer>
+    <script src="./js/header.js" type="module"></script>
   </body>
 </html>

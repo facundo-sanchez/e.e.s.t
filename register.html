@@ -21,56 +21,99 @@
   <body>
     <nav class="navbar">
       <div class="routes-container">
-        <div class="route">Inicio</div>
-        <div class="route">Tecnicaturas</div>
-        <div class="route">Proyectos</div>
-        <div class="route">Contacto</div>
+        <div class="route"><a href="./index.html">Inicio</a></div>
+        <div class="route"><a href="#">Tecnicaturas</a></div>
+        <div class="route"><a href="#">Proyectos</a></div>
+        <div class="route"><a href="#">Contacto</a></div>
       </div>
-      <div class="login">
-        Iniciar sesion
-        <img src="./assets/svg/login.svg" alt="login">
+      <div class="container-sesion">
+        <div class="login d-flex gap-3">
+          <div class="login-txt">
+            <a href="./login.html">Iniciar sesion</a>
+          </div>
+          <div><img src="./assets/svg/login.svg" alt="login" /></div>
+        </div>
+        <div class="logout d-flex gap-3 d-none">
+          <div class="logout-txt">Cerrar sesion</div>
+          <div><img src="./assets/svg/logout.svg" alt="login" /></div>
+        </div>
       </div>
     </nav>
     <div class="main">
       <div class="section form-container">
-        <form action="post">
+        <form id="form-register">
           <h2>Register</h2>
           <div class="input-container">
-            <input name="name" class="form-control" type="text" />
+            <input
+              data-name="Nombre"
+              name="name"
+              class="form-control"
+              type="text"
+            />
             <label class="placeholder-input" for="name">Nombre</label>
-            <div class="invalid-feedback">Nombre es invalido</div>
+            <div class="invalid-feedback error-name">Nombre es invalido</div>
           </div>
           <div class="input-container">
-            <input name="surname" class="form-control" type="text" />
+            <input
+              data-name="Apellido"
+              name="surname"
+              class="form-control"
+              type="text"
+            />
             <label class="placeholder-input" for="surname">Apellido</label>
-            <div class="invalid-feedback">Apellido es invalido</div>
+            <div class="invalid-feedback error-surname">
+              Apellido es invalido
+            </div>
           </div>
           <div class="input-container">
-            <input name="phone" class="form-control" type="number" />
+            <input
+              data-name="Telefono"
+              name="phone"
+              class="form-control"
+              type="number"
+            />
             <label class="placeholder-input" for="phone">Telefono</label>
-            <div class="invalid-feedback">Telefono es invalido</div>
+            <div class="invalid-feedback error-phone">Telefono es invalido</div>
           </div>
           <div class="input-container">
-            <input name="email" class="form-control" type="email" />
+            <input
+              data-name="Email"
+              name="email"
+              class="form-control"
+              type="email"
+            />
             <label class="placeholder-input" for="email">Email</label>
-            <div class="invalid-feedback">Email es invalido</div>
+            <div class="invalid-feedback error-email">Email es invalido</div>
           </div>
           <div class="input-container">
-            <input name="repeat-email" class="form-control" type="email" />
+            <input
+              data-name="Email"
+              name="repeat-email"
+              class="form-control"
+              type="email"
+            />
             <label class="placeholder-input" for="repeat-email"
               >Repetir Email</label
             >
-            <div class="invalid-feedback">El Email no coincide</div>
+            <div class="invalid-feedback error-repeat-email">
+              El Email no coincide
+            </div>
           </div>
           <div class="input-container">
-            <input name="password" class="form-control" type="password" />
+            <input
+              data-name="Contraseña"
+              name="password"
+              class="form-control"
+              type="password"
+            />
             <label class="placeholder-input" for="password">Contraseña</label>
-            <div class="invalid-feedback">
+            <div class="invalid-feedback error-password">
               La contraseña debe ser igual o mayor a 6 caracteres
             </div>
           </div>
           <div class="input-container">
             <input
+              data-name="Contraseña"
               name="repeat-password"
               class="form-control"
               type="password"
@@ -78,9 +121,19 @@
             <label class="placeholder-input" for="repeat-password"
               >Repetir Contraseña</label
             >
-            <div class="invalid-feedback">La contraseña no coincide</div>
+            <div class="invalid-feedback error-repeat-password">
+              La contraseña no coincide
+            </div>
           </div>
-          <button class="mt-4 btn btn-success">Registrar</button>
+
+          <div class="mt-4 text-center">
+            <button type="submit" class="mt-4 btn btn-success">
+              Registrar
+            </button>
+            <div class="invalid-feedback error-register">
+              Existen datos obligatorios sin completar
+            </div>
+          </div>
         </form>
       </div>
     </div>
@@ -123,6 +176,7 @@
         <p>www.eestn2olavarria.com</p>
       </div>
     </footer>
-    <script src="./js/form.js"></script>
+    <script src="./js/header.js" type="module"></script>
+    <script src="./js/form.js" type="module"></script>
   </body>
 </html>

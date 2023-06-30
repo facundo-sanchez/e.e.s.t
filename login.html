@@ -8,6 +8,12 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>EEST N°2</title>
@@ -15,23 +21,47 @@
   <body>
     <nav class="navbar">
       <div class="routes-container">
-        <div class="route">Inicio</div>
-        <div class="route">Tecnicaturas</div>
-        <div class="route">Proyectos</div>
-        <div class="route">Contacto</div>
+        <div class="route"><a href="./index.html">Inicio</a></div>
+        <div class="route"><a href="#">Tecnicaturas</a></div>
+        <div class="route"><a href="#">Proyectos</a></div>
+        <div class="route"><a href="#">Contacto</a></div>
       </div>
-      <div class="log">
-        <div><p>Iniciar sesion</p></div>
+      <div class="container-sesion">
+        <div class="login d-flex gap-3">
+          <div class="login-txt">
+            <a href="./login.html">Iniciar sesion</a>
+          </div>
+          <div><img src="./assets/svg/login.svg" alt="login" /></div>
+        </div>
+        <div class="logout d-flex gap-3 d-none">
+          <div class="logout-txt">Cerrar sesion</div>
+          <div><img src="./assets/svg/logout.svg" alt="login" /></div>
+        </div>
       </div>
     </nav>
     <div class="main">
       <div class="section form-container">
-        <form action="post">
-            <h2>Login</h2>
-          <input type="text" placeholder="Email" /><input
-            type="text"
-            placeholder="Contraseña"
-          /><button class="btn-success">Ingresar</button>
+        <form id="form-login">
+          <h2>Login</h2>
+          <div class="input-container">
+            <input data-name="Email" name="email" class="form-control" type="email" />
+            <label class="placeholder-input" for="repeat-password">Email</label>
+            <div class="invalid-feedback error-email">El Email es invalido</div>
+          </div>
+          <div class="input-container">
+            <input data-name="Contraseña" name="password" class="form-control" type="password" />
+            <label class="placeholder-input" for="repeat-password"
+              >Contraseña</label
+            >
+            <div class="invalid-feedback error-password">La contraseña es obligatoria</div>
+          </div>
+
+          <div class="mt-4">
+            <button type="submit" class="btn-success">Ingresar</button>
+            <div class="invalid-feedback error-login">
+              Los datos son incorrectos
+            </div>
+          </div>
         </form>
       </div>
     </div>
@@ -73,6 +103,8 @@
         <p>Av. del Valle 5201, Olavarría, Provincia de Buenos Aires</p>
         <p>www.eestn2olavarria.com</p>
       </div>
+      <script src="./js/form.js" type="module"></script>
+      <script src="./js/header.js" type="module"></script>
     </footer>
   </body>
 </html>

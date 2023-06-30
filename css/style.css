@@ -3,6 +3,10 @@
   padding: 0px;
   font-family: "Inter", sans-serif;
 }
+a {
+  text-decoration: none;
+  color: #fff;
+}
 
 :root {
   --verde-agua: #395b64;
@@ -19,9 +23,7 @@ body {
   color: #e7f6f2;
 }
 
-
 /*MAIN*/
-
 
 .main {
   min-height: 100vh;
@@ -63,9 +65,6 @@ p{
   color: #e7f6f2;
 }
 
-.bi{
-  width: 350px;
-}
 
 /*MAIN*/
 
@@ -84,18 +83,23 @@ p{
   flex-direction: row;
   justify-content: space-between;
 }
-.route  a {
+
+.route a {
   text-decoration: none;
   color: #e7f6f2;
-    font-size: 24px;
-    line-height: 150%;
-    letter-spacing: -0.456px;
-    cursor: pointer;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: -0.456px;
+  cursor: pointer;
 }
+
 .route:hover {
   color: #5bb37f;
 }
 .login {
+  cursor: pointer;
+}
+.logout {
   cursor: pointer;
 }
 /* NAV */
@@ -219,7 +223,7 @@ button {
   margin-top: 40px;
 }
 
-.search-bar  {
+.search-bar {
   display: flex;
   flex-direction: row;
   padding: 5px;
@@ -229,7 +233,7 @@ button {
   padding: 5px;
   cursor: pointer;
 }
-.search-container input  {
+.search-container input {
   border: none;
   width: 300px;
   padding: 5px;
@@ -237,7 +241,7 @@ button {
 /*SEARCH BAR*/
 
 /*FORM*/
-form  {
+form {
   gap: 1rem;
   display: flex;
   flex-direction: column;
@@ -302,7 +306,7 @@ input[type="number"] {
   color: var(--rojo);
 } */
 
-.form-container  {
+.form-container {
   display: flex;
   flex-direction: column;
   align-items: center;
