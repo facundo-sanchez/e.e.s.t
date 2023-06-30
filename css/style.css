@@ -37,19 +37,20 @@ body {
   justify-content: center;
 }
 h1,
-h2,
-p {
+h2{
   font-family: Inter;
   color: #e7f6f2;
-  font-weight: 500;
-  line-height: 150%;
 }
 h1 {
   text-align: center;
   font-size: 64px;
 }
 h2 {
-  font-size: 36px;
+  font-size: 42px;
+}
+p{
+  font-size: 18px;
+  letter-spacing: 0.1px;
 }
 .main-content {
   display: flex;
@@ -62,6 +63,9 @@ h2 {
   color: #e7f6f2;
 }
 
+.bi{
+  width: 350px;
+}
 
 /*MAIN*/
 
@@ -107,6 +111,11 @@ button {
 }
 
 .btn-info {
+  color: #e7f6f2;
+  width: 200px;
+  height: 40px;
+  font-size: 18px !important;
+  border-style: none;
   background-color: #395b64;
 }
 .btn-info:hover {
@@ -418,6 +427,15 @@ footer {
   text-align: center;
 }
 /*FOOTER*/
+
+/*CONTACTO*/
+.container-contact{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 80%;
+}
+/*CONTACTO*/
 
 /*NOTICIAS*/
 .noticias-container {

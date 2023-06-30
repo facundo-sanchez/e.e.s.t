@@ -35,7 +35,8 @@
           Te invitamos a conocer nuestras instalaciones y proupestas en nuestra
           renovada página web
         </p>
-        <button class="btn-info">Ver tecnicaturas</button>
+        <!-- <button class="btn-info" >Ver tecnicaturas</button> -->
+        <a href="#tecnicaturas" class="btn-info">Ver tecnicaturas</a>
       </div>
       <div class="container-information">
         <div class="info-section">
@@ -58,7 +59,7 @@
           </div>
         </div>
         <div class="info-section">
-          <h2 class="info-title">Nuestras tecnicaturas</h2>
+          <h2 class="info-title" id="tecnicaturas">Nuestras tecnicaturas</h2>
           <div class="info-content tecnicatura">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -73,14 +74,23 @@
               />
             </svg>
             <p class="info-parrafo">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-              quod rerum esse facilis officiis impedit!
+              La tecnicatura de
+              <span style="font-weight: bold">Maestro Mayor de Obras</span>
+              cuenta con una importante preparación técnico-profesional, con
+              alcances que habilita a los alumnos a asumir diferentes y muy
+              variados niveles de responsabilidad en el campo de las
+              Construcciones Civiles.
             </p>
           </div>
           <div class="info-content tecnicatura">
             <p class="info-parrafo">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-              quod rerum esse facilis officiis impedit!
+              La orientacion en<span style="font-weight: bold"
+                >Informática</span
+              >
+              provee una formacion estratégica para el futuro de los jóvenes
+              interesados en la tecnología. Desde programacion, desarrollo y
+              diseño web hasta la utilizacion de programas de diseño gráfico.
+              Una tecnicatura con futuro.
             </p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -109,14 +119,22 @@
               />
             </svg>
             <p class="info-parrafo">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-              quod rerum esse facilis officiis impedit!
+              La tecnicatura en
+              <span style="font-weight: bold">Electromecánica</span> le brinda
+              al alumno conocimientos técnicos sobre diversas actividades
+              relacionadas a la gestion, mentenimiento y empleo de maquinaria
+              electromecánica y mecánica en distintos rubros, tales como
+              fábricas, talleres e industrias.
             </p>
           </div>
           <div class="info-content tecnicatura">
             <p class="info-parrafo">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-              quod rerum esse facilis officiis impedit!
+              La formacion del técnico en
+              <span style="font-weight: bold">Automotores</span> permite un
+              empleo pleno de las funciones requeridas en el mercado laboral del
+              sector. Quien complete la técnicatura tendrá la capacidad y las
+              herramientas como para desarrollarse en el mantenimiento, armado y
+              verificación de piezas del automotor.
             </p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -139,33 +157,44 @@
       <div class="container-opinions">
         <div class="card-opinion">
           <div class="card-opinion-main">
-          <div class="card-opinion-title">
-            <h2>"</h2>
-            <h2>Fabito UWU</h2>
+            <div class="card-opinion-title">
+              <h2>"</h2>
+              <h2>Fabito UWU</h2>
+            </div>
+            <div class="card-content">
+              <p style="margin-bottom: 0">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem
+                dignissimos laborum aspernatur eius. Blanditiis aperiam illum
+                velit quis, dolor non est. Earum soluta possimus dolorem?
+              </p>
+            </div>
+            <div class="card-opinion-footer">
+              25 años, técnico electromecánico.
+            </div>
           </div>
-          <div class="card-content">
-            <p style="margin-bottom: 0;">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem
-              dignissimos laborum aspernatur eius. Blanditiis aperiam illum
-              velit quis, dolor non est. Earum soluta possimus dolorem?
-            </p>
-          </div>
-          <div class="card-opinion-footer">25 años, técnico electromecánico.</div>
-        </div>
-        <div class="card-opinion-decorate"></div>
+          <div class="card-opinion-decorate"></div>
         </div>
       </div>
       <div class="container-contact">
         <div class="map-section">
-          <div class="map"></div>
+          <div class="map">
+            <iframe
+              width="400"
+              height="400"
+              allowfullscreen="allowfullscreen"
+              loading="lazy"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3190.022930694433!2d-60.30542709993922!3d-36.913716129575455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95944427a8d53fd5%3A0xfa38b37917b1c49c!2sEscuela%20de%20Educacion%20Tecnica%20Nro%202!5e0!3m2!1ses-419!2sar!4v1626444164829!5m2!1ses-419!2sar"
+              class="border ubication-map"
+            ></iframe>
+          </div>
         </div>
         <div class="contact-section">
-          <form action="post" class="contact-form">
+          <form action="post" class="contact-form" id="contact-form">
             <h2>CONTACTO</h2>
             <input type="text" placeholder="Nombre" />
             <input type="text" placeholder="Apellido" />
             <input type="text" placeholder="Email" />
-            <input type="text" placeholder="Mensaje" />
+            <input type="text" placeholder="Consulta" />
             <button class="btn-success">Enviar</button>
           </form>
         </div>
