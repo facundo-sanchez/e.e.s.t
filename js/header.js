@@ -4,6 +4,20 @@ import { menuAdmin } from "../utils/menuAdmin.js";
 document.querySelector('.logout').addEventListener('click', logout)
 const menu = document.querySelector('.menu-admin');
 
+const menuMobile = document.querySelector('.menu-mobile');
+
+menuMobile.addEventListener('click', () => {
+  document.querySelector('.container-menu').classList.toggle('slide-menu')
+
+  if (!document.querySelector('.container-menu').classList.contains('slide-menu')) {
+    document.querySelector('.menu-mobile-icon').src = './assets/svg/menu-x.svg'
+    document.querySelector('.backgroun-menu').classList.remove('d-none');
+  } else {
+    document.querySelector('.menu-mobile-icon').src = './assets/svg/list.svg'
+    document.querySelector('.backgroun-menu').classList.add('d-none');
+  }
+})
+
 const initHeader = () => {
   sessionStorage.getItem('email')
   sessionStorage.getItem('expiration')
