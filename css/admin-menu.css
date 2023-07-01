@@ -1,0 +1,70 @@
+.contenedor {
+  position: fixed;
+  bottom: 17vh;
+  right: 15vh;
+}
+
+.bnt-menu {
+  background-color: #5bb37f;
+  border: none;
+  color: black;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  position: fixed;
+  cursor: pointer;
+}
+.container-list {
+  position: relative;
+}
+.container-opciones {
+  position: relative;
+  display: none;
+  padding: 0;
+  margin-top: 45px;
+  flex-direction: row;
+  gap: 1em;
+}
+
+
+.opciones {
+  cursor: pointer;
+  display: flex;
+  gap: 1em;
+  height: 40px;
+  align-items: center;
+}
+
+.opciones-txt {
+  background-color: #aff4c6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+  width: 140px !important;
+  height: 35px;
+  padding: 0em;
+  margin: .5em;
+}
+.opciones-txt p {
+  color: black !important;
+  margin: 0 !important;
+  font-size: 14px !important;
+}
+
+.visible {
+  display: flex;
+}
+
+.list-options{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  top: -120px;
+  right: -35px;
+  width: 200px;
+}

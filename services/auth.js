@@ -28,6 +28,7 @@ export const authLogin = async (data = {}) => {
     sessionStorage.setItem('surname', find.surname);
     sessionStorage.setItem('email', find.email);
     sessionStorage.setItem('expiration', new Date(new Date().getTime() + (1 * 60 * 60 * 1000)))
+    sessionStorage.setItem('role', find.role)
     return true;
   }
 }
