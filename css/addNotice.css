@@ -1,0 +1,41 @@
+.card-noticia{
+  width: auto;
+}
+
+
+/* Add noticia*/
+.title-addNotice{
+  margin-top: 2em;
+}
+
+.container-addNotice{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: center; */
+  width: 100%;
+}
+.container-form{
+  width: 400px;
+}
+.container-form input, .container-form textarea,.container-form button{
+  width: 350px;
+}
+
+.btns{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-preview{
+  width: 400px;
+}
+
+@media only screen and (max-width: 800px) {
+  .title-addNotice{
+    margin-top: 6em;
+  }
+}

@@ -4,10 +4,14 @@ export const menuAdmin = `<div class="contenedor">
     <div class="list-options">
       <div class="opciones">
         <div class="opciones-txt">
-          <p>Noticia/Proyecto</p>
+          <a href="./addNoticia.html">
+            <p>Noticia/Proyecto</p>
+          </a>
         </div>
         <div>
-          <img src="./assets/svg/newspaper.svg" alt="" srcset="" />
+          <a href="./addNoticia.html">
+            <img src="./assets/svg/newspaper.svg" alt="" srcset="" />
+          </a>
         </div>
       </div>
       <div class="opciones">

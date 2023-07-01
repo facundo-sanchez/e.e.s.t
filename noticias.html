@@ -22,7 +22,8 @@
         <div class="route"><a href="./index.html">Inicio</a></div>
         <div class="route"><a href="#">Tecnicaturas</a></div>
         <div class="route"><a href="#">Proyectos</a></div>
-        <div class="route"><a href="#">Contacto</a></div>
+        <div class="route router-active"><a href="#">Noticias</a></div>
+        <div class="route"><a href="#contacto">Contacto</a></div>
       </div>
       <div class="container-sesion">
         <div class="login d-flex gap-3">
@@ -43,7 +44,7 @@
           <div class="option"><a href="./index.html">Inicio</a></div>
           <div class="option"><a href="#">Tecnicaturas</a></div>
           <div class="option"><a href="#">Proyectos</a></div>
-          <div class="option"><a href="#">Contacto</a></div>
+          <div class="option"><a href="#contacto">Contacto</a></div>
         </div>
       </div>
     </div>
@@ -53,7 +54,11 @@
       <div class="search-container">
         <h2>Noticias</h2>
         <div class="search-bar">
-          <input class="form-control" type="text" placeholder="Busca entre nuestras noticias" />
+          <input
+            class="form-control"
+            type="text"
+            placeholder="Busca entre nuestras noticias"
+          />
           <!-- <div class="search-icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -132,20 +137,73 @@
             </p>
           </div>
         </div>
-        <div class="card-noticia">
-          <div class="card-header">
-            <div class="card-img">
-              <img src="assets/img/noticia-prueba.png" alt="imagen-noticia" />
+      </div>
+      <div class="container-contact" id="contacto">
+        <div class="map-section">
+          <div class="map">
+            <iframe
+              width="400"
+              height="400"
+              allowfullscreen="allowfullscreen"
+              loading="lazy"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3190.022930694433!2d-60.30542709993922!3d-36.913716129575455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95944427a8d53fd5%3A0xfa38b37917b1c49c!2sEscuela%20de%20Educacion%20Tecnica%20Nro%202!5e0!3m2!1ses-419!2sar!4v1626444164829!5m2!1ses-419!2sar"
+              class="border ubication-map"
+            ></iframe>
+          </div>
+        </div>
+        <div class="contact-section">
+          <form class="form-contact" id="form-contact">
+            <h2>CONTACTO</h2>
+            <div class="input-container">
+              <input
+                data-name="Nombre"
+                name="name"
+                class="form-control"
+                type="text"
+              />
+              <label class="placeholder-input" for="name">Nombre</label>
+              <div class="invalid-feedback error-name">Nombre es invalido</div>
             </div>
-            <div class="card-title"><h2>Titulo de la noticia</h2></div>
-          </div>
-          <div class="card-footer">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae
-              impedit animi ut quibusdam provident nisi error porro nobis velit
-              perspiciatis.
-            </p>
-          </div>
+            <div class="input-container">
+              <input
+                data-name="Apellido"
+                name="surname"
+                class="form-control"
+                type="text"
+              />
+              <label class="placeholder-input" for="surname">Apellido</label>
+              <div class="invalid-feedback error-surname">
+                Apellido es invalido
+              </div>
+            </div>
+            <div class="input-container">
+              <input
+                data-name="Email"
+                name="email"
+                class="form-control"
+                type="email"
+              />
+              <label class="placeholder-input" for="repeat-password"
+                >Email</label
+              >
+              <div class="invalid-feedback error-email">
+                El Email es invalido
+              </div>
+            </div>
+            <div class="input-container">
+              <input
+                data-name="Nombre"
+                name="name"
+                class="form-control"
+                type="text"
+              />
+              <label class="placeholder-input" for="name">Consulta</label>
+              <div class="invalid-feedback error-name">
+                El texto es inválido.
+              </div>
+            </div>
+            <button class="btn-success">Enviar</button>
+          </form>
         </div>
       </div>
     </div>
@@ -189,5 +247,6 @@
       </div>
     </footer>
     <script src="./js/header.js" type="module"></script>
+    <script src="./js/notice.js" type="module"></script>
   </body>
 </html>

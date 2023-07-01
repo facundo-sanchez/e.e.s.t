@@ -13,22 +13,26 @@ export const authRegister = async (data = {}) => {
     }
     return false
   } catch (error) {
-    return new Error(error)
+    return new Error('Error en el servidor')
   }
 }
 
 export const authLogin = async (data = {}) => {
-  const { email, password } = data
-  const response = await fetch(url);
-  const users = await response.json();
-
-  const find = users.find((u) => u.email === email)
-  if (find && find.password === password) {
-    sessionStorage.setItem('name', find.name);
-    sessionStorage.setItem('surname', find.surname);
-    sessionStorage.setItem('email', find.email);
-    sessionStorage.setItem('expiration', new Date(new Date().getTime() + (1 * 60 * 60 * 1000)))
-    sessionStorage.setItem('role', find.role)
-    return true;
+  try {
+    const { email, password } = data
+    const response = await fetch(url);
+    const users = await response.json();
+  
+    const find = users.find((u) => u.email === email)
+    if (find && find.password === password) {
+      sessionStorage.setItem('name', find.name);
+      sessionStorage.setItem('surname', find.surname);
+      sessionStorage.setItem('email', find.email);
+      sessionStorage.setItem('expiration', new Date(new Date().getTime() + (1 * 60 * 60 * 1000)))
+      sessionStorage.setItem('role', find.role)
+      return true;
+    }
+  } catch (error) {
+    return new Error('Error en el servidor')
   }
 }

@@ -5,6 +5,17 @@ document.querySelector('.logout').addEventListener('click', logout)
 const menu = document.querySelector('.menu-admin');
 
 const menuMobile = document.querySelector('.menu-mobile');
+const optiosMenuMobile = document.querySelectorAll('.option');
+
+if (optiosMenuMobile) {
+  optiosMenuMobile.forEach((e) => {
+    e.addEventListener('click', () => {
+      document.querySelector('.container-menu').classList.toggle('slide-menu')
+      document.querySelector('.menu-mobile-icon').src = './assets/svg/list.svg'
+      document.querySelector('.backgroun-menu').classList.add('d-none');
+    })
+  })
+}
 
 menuMobile.addEventListener('click', () => {
   document.querySelector('.container-menu').classList.toggle('slide-menu')
@@ -18,6 +29,10 @@ menuMobile.addEventListener('click', () => {
   }
 })
 
+if (window.location.href.includes('addNoticia.html') && sessionStorage.getItem('role') !== 'admin') {
+  window.location.href = '/noticias.html'
+}
+
 const initHeader = () => {
   sessionStorage.getItem('email')
   sessionStorage.getItem('expiration')
@@ -27,7 +42,8 @@ const initHeader = () => {
   const date = new Date();
   if (!date < new Date(sessionStorage.getItem('expiration'))) {
     if (sessionStorage.getItem('role') === 'admin') {
-      menu.innerHTML = menuAdmin
+      if (menu)
+        menu.innerHTML = menuAdmin
     }
     const btn = document.querySelector(".bnt-menu");
     const icon = document.getElementById('svg-icon');
