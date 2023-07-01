@@ -212,6 +212,8 @@ button {
   width: 100%;
   text-align: center;
   margin: auto;
+  padding: 5rem;
+  gap: 5rem;
 }
 .container-opinions h2{
   text-shadow: 9px 9px 15px black;
@@ -490,6 +492,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100% !important;
+  min-height: 100vh;
   gap: 3rem;
   justify-content: center;
 }
@@ -551,7 +554,34 @@ footer {
 .information-register a {
   color: #0d99ff;
 }
-
+.spinner-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(43, 43, 43,0.5);
+  z-index: 200;
+  position: fixed;
+}
+.spinner{
+  margin: auto;
+  border: 4px solid #5bb37f;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border-left-color: #b8534b;
+  animation: spin 1s ease infinite;
+}
+@keyframes spin{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
 @media only screen and (min-width: 800px) {
   .container-menu {
     display: none;
@@ -562,6 +592,10 @@ footer {
   .container-information {
     flex-direction: column;
     align-items: center;
+  }
+  .container-opinions{
+    padding: 2rem;
+    gap: 2rem;
   }
   .info-parrafo {
     text-align: center;

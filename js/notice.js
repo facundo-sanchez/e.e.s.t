@@ -11,5 +11,4 @@ window.addEventListener('DOMContentLoaded', async () => {
   } else {
     // mensaje de vacio
   }
-
 })
