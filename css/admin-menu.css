@@ -1,7 +1,9 @@
+
 .contenedor {
   position: fixed;
   bottom: 17vh;
   right: 15vh;
+  z-index: 1 !important;
 }
 
 .bnt-menu {
@@ -67,4 +69,28 @@
   top: -120px;
   right: -35px;
   width: 200px;
+}
+
+@media only screen and (max-width: 800px) {
+  
+  .search-container,.form-container{
+    margin-top: 70px;
+  }
+  .navbar {
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  .menu-mobile {
+    display: block;
+  }
+  .routes-container {
+    display: none;
+  }
+  .contenedor{
+    bottom: 10vh;
+    right: 8vh;
+  }
 }
