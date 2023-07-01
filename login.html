@@ -8,6 +8,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/spinner.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,9 +26,9 @@
       </div>
       <div class="routes-container">
         <div class="route"><a href="./index.html">Inicio</a></div>
-        <div class="route"><a href="#">Tecnicaturas</a></div>
-        <div class="route"><a href="#">Proyectos</a></div>
-        <div class="route"><a href="#">Contacto</a></div>
+        <div class="route"><a href="#tecnicaturas">Tecnicaturas</a></div>
+        <div class="route"><a href="./noticias.html">Noticias</a></div>
+        <div class="route"><a href="#contacto">Contacto</a></div>
       </div>
       <div class="container-sesion">
         <div class="login d-flex gap-3">
@@ -45,14 +46,27 @@
     <div class="container-menu slide-menu">
       <div class="container-list">
         <div class="list">
-          <div class="option">Inicio</div>
-          <div class="option">Tecnicaturas</div>
-          <div class="option">Proyecto</div>
-          <div class="option">Contacto</div>
+          <div class="option"><a href="index.html">Inicio</a></div>
+          <div class="option"><a href="#tecnicaturas">Tecnicaturas</a></div>
+          <div class="option"><a href="noticias.html">Noticias</a></div>
+          <div class="option"><a href="#contacto">Contacto</a></div>
         </div>
       </div>
     </div>
     <div class="backgroun-menu d-none"></div>
+    <div class="container-spinner d-none">
+      <div class="sk-chase">
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+      </div>
+    </div>
+    <div class="background-spinner d-none"></div>
+    <div class="backgroun-menu d-none"></div>
+    <div class="menu-admin"></div>
     <div class="main">
       <div class="section form-container">
         <form id="form-login">
