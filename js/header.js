@@ -39,8 +39,7 @@ const initHeader = () => {
   sessionStorage.getItem('name')
   sessionStorage.getItem('surname')
 
-  const date = new Date();
-  if (!date < new Date(sessionStorage.getItem('expiration'))) {
+  if (new Date().getTime() < new Date(sessionStorage.getItem('expiration')).getTime()) {
     if (sessionStorage.getItem('role') === 'admin') {
       if (menu)
         menu.innerHTML = menuAdmin
