@@ -58,22 +58,37 @@
         <form id="form-login">
           <h2>Login</h2>
           <div class="input-container">
-            <input data-name="Email" name="email" class="form-control" type="email" />
+            <input
+              data-name="Email"
+              name="email"
+              class="form-control"
+              type="email"
+            />
             <label class="placeholder-input" for="repeat-password">Email</label>
             <div class="invalid-feedback error-email">El Email es invalido</div>
           </div>
           <div class="input-container">
-            <input data-name="Contraseña" name="password" class="form-control" type="password" />
+            <input
+              data-name="Contraseña"
+              name="password"
+              class="form-control"
+              type="password"
+            />
             <label class="placeholder-input" for="repeat-password"
               >Contraseña</label
             >
-            <div class="invalid-feedback error-password">La contraseña es obligatoria</div>
+            <div class="invalid-feedback error-password">
+              La contraseña es obligatoria
+            </div>
           </div>
 
-          <div class="mt-4">
+          <div class="mt-4 text-center">
             <button type="submit" class="btn-success">Ingresar</button>
             <div class="invalid-feedback error-login">
               Los datos son incorrectos
+            </div>
+            <div class='information-register'>
+              <p>Aún no tienes cuenta?   <span><a href="./register.html">Registrate!</a></span></p>
             </div>
           </div>
         </form>

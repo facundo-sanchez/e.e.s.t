@@ -519,6 +519,17 @@ footer {
   gap: 1em;
 }
 
+.information-register{
+  margin-top: 1em;
+}
+
+.information-register a, .information-register p{
+  font-size: 12px;
+}
+.information-register a{
+  color: #0D99FF;
+}
+
 @media only screen and (min-width: 800px) {
   .container-menu {
     display: none;
