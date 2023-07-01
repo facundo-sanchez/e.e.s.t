@@ -113,7 +113,14 @@ button {
   border-style: none;
   cursor: pointer;
 }
-
+.btn{
+  color: #e7f6f2;
+  width: 200px;
+  height: 40px;
+  font-size: 18px !important;
+  border-style: none;
+  cursor: pointer;
+}
 .btn-info {
   color: #e7f6f2;
   width: 200px;

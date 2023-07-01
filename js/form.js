@@ -3,6 +3,7 @@ import { initInputs } from "../classes/formControl.js";
 
 const formLogin = document.getElementById('form-login')
 const formRegister = document.getElementById('form-register')
+const formContact = document.getElementById('form-contact')
 
 // const isValid = (input) => {
 //   input.classList.remove('is-invalid');
@@ -112,12 +113,11 @@ const formRegister = document.getElementById('form-register')
 //     sessionStorage.setItem('expiration', new Date(new Date().getTime() + (1 * 60 * 60 * 1000)))
 //     return true;
 //   }
-
 //   return false;
 // }
 
 if (formLogin) {
-  formLogin.addEventListener('submit', async function as(e) {
+  formLogin.addEventListener('submit', async function(e) {
     e.preventDefault();
     const data = new FormData(formLogin);
     const result = await login(data)
@@ -132,7 +132,7 @@ if (formLogin) {
 }
 
 if (formRegister) {
-  formRegister.addEventListener('submit', async function as(e) {
+  formRegister.addEventListener('submit', async function(e) {
     e.preventDefault();
     const data = new FormData(formRegister);
     const result = await register(data)
@@ -147,8 +147,9 @@ if (formRegister) {
   })
 }
 
-
-
+if(formContact){
+  
+}
 // const register = async (e) => {
 //   e.preventDefault();
 //   const url = "https://649e015d9bac4a8e669e852e.mockapi.io/users";
@@ -168,9 +169,6 @@ if (formRegister) {
 //   console.log(response)
 //   console.log('register')
 // }
-
-
-
 // const initInputs = () => {
 //   const input = document.querySelectorAll('.form-control');
 //   const placeholder = document.querySelectorAll('.placeholder-input');

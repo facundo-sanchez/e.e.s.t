@@ -10,6 +10,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/admin-menu.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>EEST N°2</title>
@@ -35,6 +36,7 @@
         </div>
       </div>
     </nav>
+    <div class="menu-admin"></div>
     <div class="main">
       <div class="main-content">
         <h1>EEST N°2</h1>
@@ -45,7 +47,7 @@
           renovada página web
         </p>
         <!-- <button class="btn-info" >Ver tecnicaturas</button> -->
-        <a href="#tecnicaturas" class="btn-info">Ver tecnicaturas</a>
+        <a href="#tecnicaturas" class="btn btn-info">Ver tecnicaturas</a>
       </div>
       <div class="container-information">
         <div class="info-section">
@@ -198,12 +200,45 @@
           </div>
         </div>
         <div class="contact-section">
-          <form action="post" class="contact-form" id="contact-form">
+          <form class="form-contact" id="form-contact">
             <h2>CONTACTO</h2>
-            <input type="text" placeholder="Nombre" />
-            <input type="text" placeholder="Apellido" />
-            <input type="text" placeholder="Email" />
-            <input type="text" placeholder="Consulta" />
+            <div class="input-container">
+              <input
+                data-name="Nombre"
+                name="name"
+                class="form-control"
+                type="text"
+              />
+              <label class="placeholder-input" for="name">Nombre</label>
+              <div class="invalid-feedback error-name">Nombre es invalido</div>
+            </div>
+            <div class="input-container">
+              <input
+                data-name="Apellido"
+                name="surname"
+                class="form-control"
+                type="text"
+              />
+              <label class="placeholder-input" for="surname">Apellido</label>
+              <div class="invalid-feedback error-surname">
+                Apellido es invalido
+              </div>
+            </div>
+            <div class="input-container">
+              <input data-name="Email" name="email" class="form-control" type="email" />
+              <label class="placeholder-input" for="repeat-password">Email</label>
+              <div class="invalid-feedback error-email">El Email es invalido</div>
+            </div>
+            <div class="input-container">
+              <input
+                data-name="Nombre"
+                name="name"
+                class="form-control"
+                type="text"
+              />
+              <label class="placeholder-input" for="name">Consulta</label>
+              <div class="invalid-feedback error-name">El texto es inválido.</div>
+            </div>
             <button class="btn-success">Enviar</button>
           </form>
         </div>
@@ -249,5 +284,6 @@
       </div>
     </footer>
     <script src="./js/header.js" type="module"></script>
+    <script src="./js/form.js" type="module"></script>
   </body>
 </html>
