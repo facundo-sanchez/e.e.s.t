@@ -1,7 +1,19 @@
 const url = "https://649e015d9bac4a8e669e852e.mockapi.io/users";
 
+const userExists = async (data) => {
+  const response = await fetch(url);
+  const users = await response.json();
+
+  if (users.find((e) => e.email === data.email)) return false;
+
+  return true;
+}
+
 export const authRegister = async (data = {}) => {
   try {
+    const repeatEmail = await userExists(data);
+    if (!repeatEmail) return new Error('Email ya registrado');
+
     const response = await fetch(url, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -22,7 +34,7 @@ export const authLogin = async (data = {}) => {
     const { email, password } = data
     const response = await fetch(url);
     const users = await response.json();
-  
+
     const find = users.find((u) => u.email === email)
     if (find && find.password === password) {
       sessionStorage.setItem('name', find.name);
