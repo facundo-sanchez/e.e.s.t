@@ -93,8 +93,8 @@ p {
   cursor: pointer;
 }
 
-.router-active a{
-  color: #5BB37F;
+.router-active a {
+  color: #5bb37f;
 }
 
 .route:hover {
@@ -185,27 +185,43 @@ button {
   justify-content: space-between;
   gap: 1rem;
   width: 35%;
-  height: 80vh;
 }
 .tecnicatura {
   display: flex;
   flex-direction: row;
 }
-.bi{
+.bi {
   vertical-align: middle;
-  width: 230px;
+  height: 64px;
+  width: 200px;
+}
+.bi-social {
+  vertical-align: middle;
+  height: 40px;
+  width: 40px;
 }
 /*INFORMATION*/
 
 /*OPINIONES*/
 .container-opinions {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: #526d82;
   width: 100%;
-  height: 85vh;
-  justify-content: space-evenly;
-  align-items: center;
-  overflow-x: auto;
+  text-align: center;
+  margin: auto;
+}
+.container-opinions h2{
+  text-shadow: 9px 9px 15px black;
+}
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100% !important;
+  justify-content: center;
+  gap: 2rem;
 }
 .card-decorate {
   background-color: #395b64;
@@ -213,6 +229,13 @@ button {
   height: 280px;
   rotate: calc(20deg);
   position: absolute;
+}
+opinions-title {
+  margin: 2rem;
+  text-decoration: underline;
+  text-shadow: 6px 6px 20px black;
+  /* text-underline-position: left; */
+  text-underline-offset: 20px;
 }
 .card-main {
   margin: auto;
@@ -232,27 +255,19 @@ button {
   text-align: end;
 }
 .card-opinion {
-  display: inline-block;
-  position: relative;
-  width: 40%;
   display: flex;
+  flex-direction: column;
   align-content: center;
   justify-content: center;
   align-items: center;
-  gap: 5em;
-}
-.card-opinion-main {
-  position: absolute;
+  gap: 1em;
   margin: auto;
-  /* background-color: #27374d; */
   width: 400px;
   height: auto;
   z-index: 1;
   padding: 1rem;
-  /* box-shadow: 20px 15px 20px #27374d68; */
-  border-radius: 100%;
 }
-.card-opinion-main *{
+.card-opinion * {
   text-shadow: 11px 9px 10px #2b2b2b;
 }
 .card-opinion-title {
@@ -461,6 +476,12 @@ footer {
   justify-content: space-evenly;
   width: 80%;
   flex-wrap: wrap;
+  gap: 3rem;
+}
+.map-section{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 /*CONTACTO*/
 
@@ -519,15 +540,16 @@ footer {
   gap: 1em;
 }
 
-.information-register{
+.information-register {
   margin-top: 1em;
 }
 
-.information-register a, .information-register p{
+.information-register a,
+.information-register p {
   font-size: 12px;
 }
-.information-register a{
-  color: #0D99FF;
+.information-register a {
+  color: #0d99ff;
 }
 
 @media only screen and (min-width: 800px) {
@@ -537,8 +559,22 @@ footer {
 }
 
 @media only screen and (max-width: 800px) {
-  
-  .search-container,.form-container{
+  .container-information {
+    flex-direction: column;
+    align-items: center;
+  }
+  .info-parrafo {
+    text-align: center;
+  }
+  .info-content {
+    flex: 1 100%;
+  }
+  .info-section {
+    width: 85%;
+    height: auto;
+  }
+  .search-container,
+  .form-container {
     margin-top: 70px;
   }
   .navbar {
@@ -554,7 +590,7 @@ footer {
   .routes-container {
     display: none;
   }
-  .card-noticia{
+  .card-noticia {
     flex: 0 0 80%;
   }
 }
@@ -564,7 +600,7 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-  .card-noticia{
+  .card-noticia {
     width: 80%;
   }
 }
