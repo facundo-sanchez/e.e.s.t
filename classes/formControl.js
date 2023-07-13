@@ -5,13 +5,14 @@ const isValid = (input) => {
 
 const notIsValid = (input) => {
   input.classList.remove('is-valid');
-  input.classList.add('is-invalid');
+  if (input.name !== 'search')
+    input.classList.add('is-invalid');
 }
 
 const getValue = (input, e) => {
   switch (input.name) {
     case 'titulo': {
-      document.querySelector('.card-title').innerHTML = `<h2>${input.value}</h2>`
+      document.querySelector('.card-title-preview').innerHTML = `<h2>${input.value}</h2>`
       break;
     }
     case 'categoria': {

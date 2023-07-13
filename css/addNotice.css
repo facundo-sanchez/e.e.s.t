@@ -1,14 +1,13 @@
-.card-noticia{
+.card-noticia {
   width: auto;
 }
 
-
 /* Add noticia*/
-.title-addNotice{
+.title-addNotice {
   margin-top: 2em;
 }
 
-.container-addNotice{
+.container-addNotice {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -16,26 +15,51 @@
   /* align-items: center; */
   width: 100%;
 }
-.container-form{
+.container-form {
   width: 400px;
 }
-.container-form input, .container-form textarea,.container-form button{
+.container-form input,
+.container-form textarea,
+.container-form button {
   width: 350px;
 }
 
-.btns{
+.btns {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.container-preview{
+.container-preview {
   width: 400px;
+}
+.img-preview {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+.card-title-preview {
+  position: absolute;
+  display: flex;
+  top: 70%;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.card-title-preview h2 {
+  text-align: center;
+  font-size: 22px;
+  padding: 10px;
 }
 
 @media only screen and (max-width: 800px) {
-  .title-addNotice{
+  .title-addNotice {
     margin-top: 6em;
   }
 }

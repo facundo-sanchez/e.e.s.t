@@ -5,9 +5,9 @@ export const generateNotice = (data = []) => {
     <div class="card-noticia">
       <div class="card-header">
         <div class="card-img">
-          <img src="assets/img/noticia-prueba.png" alt="imagen-noticia" />
+          <img class="img-preview" src="assets/img/noticia-prueba.png" alt="imagen-noticia" />
+          <div class="card-title"><h2>${e.titulo}</h2></div>
         </div>
-        <div class="card-title"><h2>${e.titulo}</h2></div>
       </div>
       <div class="card-footer">
         <p>

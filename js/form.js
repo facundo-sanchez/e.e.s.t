@@ -1,5 +1,5 @@
 import { login, register } from "../classes/auth.js";
-import { initInputs, resetInputs } from "../classes/formControl.js";
+import { initInputs, isValidForm, resetInputs } from "../classes/formControl.js";
 import { addNotices } from "../classes/notice.js";
 import { showSpinner } from "../utils/spinner.js";
 
@@ -52,7 +52,20 @@ if (formRegister) {
 }
 
 if (formContact) {
+  formContact.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const formData = new FormData(formContact);
+    const input = document.querySelectorAll('.form-control');
+    if (!isValidForm(formData, input)) return false;
 
+    showSpinner(true)
+    setTimeout(() => {
+      resetInputs();
+      document.querySelector('.text-sucess-contact').classList.remove('d-none')
+      showSpinner(false)
+    },1500)
+
+  })
 }
 
 if (formNotice) {

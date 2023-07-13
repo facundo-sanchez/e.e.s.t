@@ -68,7 +68,7 @@ p {
 /*MAIN*/
 
 /*login*/
-.form-container{
+.form-container {
   width: 100%;
   height: 90vh;
   display: flex;
@@ -76,7 +76,7 @@ p {
   align-items: center;
   justify-content: center;
 }
-.form-login{
+.form-login {
   margin: auto;
 }
 /*login*/
@@ -229,7 +229,7 @@ button {
   padding: 5rem;
   gap: 5rem;
 }
-.container-opinions h2{
+.container-opinions h2 {
   text-shadow: 9px 9px 15px black;
 }
 .cards-container {
@@ -365,11 +365,11 @@ input[type="number"] {
   position: absolute;
   text-align: center;
   width: 300px;
-  top: 0.6em;
+  top: 0.4em;
   left: 2em;
   right: 0;
-  color: #999;
-  font-size: 16px;
+  color: #5f5f5f;
+  font-size: 18px;
   transition: all 0.3s ease;
   pointer-events: none;
 }
@@ -377,7 +377,7 @@ input[type="number"] {
 .placeholder-active {
   /* text-align: initial; */
   top: -30px;
-  font-size: 18px;
+  font-size: 20px;
   color: #fff;
   left: 2em;
 }
@@ -417,6 +417,12 @@ input[type="number"] {
   height: auto;
   display: block;
 }
+.img-preview {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
 .card-title {
   position: absolute;
   display: flex;
@@ -437,6 +443,8 @@ input[type="number"] {
 }
 .card-footer p {
   text-align: left;
+  height: 100px;
+  overflow: hidden;
 }
 /*CARD*/
 
@@ -489,14 +497,18 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 80%;
+  width: 60%;
   flex-wrap: wrap;
-  gap: 3rem;
+  gap: 0rem;
+  margin-top: 5em;
 }
-.map-section{
+.map-section {
   display: flex;
   flex-direction: column;
   text-align: center;
+  width: 500px;
+  height: 500px;
+  gap: 0.1em;
 }
 /*CONTACTO*/
 
@@ -567,18 +579,18 @@ footer {
 .information-register a {
   color: #0d99ff;
 }
-.spinner-container{
+.spinner-container {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   width: 100%;
   height: 100vh;
-  background-color: rgba(43, 43, 43,0.5);
+  background-color: rgba(43, 43, 43, 0.5);
   z-index: 200;
   position: fixed;
 }
-.spinner{
+.spinner {
   margin: auto;
   border: 4px solid #5bb37f;
   width: 50px;
@@ -587,11 +599,31 @@ footer {
   border-left-color: #b8534b;
   animation: spin 1s ease infinite;
 }
-@keyframes spin{
-  0%{
+
+.form-contact {
+  display: flex;
+  gap: 1.6em;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-search {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 90%;
+  width: 10px;
+  text-align: center;
+  z-index: 2;
+}
+
+@keyframes spin {
+  0% {
     transform: rotate(0deg);
   }
-  100%{
+  100% {
     transform: rotate(360deg);
   }
 }
@@ -606,7 +638,7 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-  .container-opinions{
+  .container-opinions {
     padding: 2rem;
     gap: 2rem;
   }
